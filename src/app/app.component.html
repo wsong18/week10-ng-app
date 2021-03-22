@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">WEB422 Demos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/foo" routerLinkActive="active">Foo</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/helloworld" routerLinkActive="active">Hello World</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/acs" routerLinkActive="active">ACS Binding</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/directives" routerLinkActive="active">Directives</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/events" routerLinkActive="active">Events</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/posts" routerLinkActive="active">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/driver" routerLinkActive="active">Driver</a>
+        </li>
+
+      </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            
+            <!-- <h1>The App ('root') Component</h1>
+            <p>the root component is running!</p> -->
+
+            <!-- <hr>
+            <app-events></app-events>
+
+            <hr>
+            <app-directives></app-directives>
+
+            <hr>
+            <app-attribute-class-style-binding></app-attribute-class-style-binding>
+
+            <hr>
+            <app-foo></app-foo>
+
+            <hr>
+            <app-hello-world [photos]="studentPhotos"></app-hello-world> -->
+
+            <router-outlet></router-outlet>        
+        </div>
+    </div>
+</div>
+
+

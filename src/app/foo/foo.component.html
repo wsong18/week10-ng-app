@@ -1,0 +1,10 @@
+<h2>The Foo Component (Week 6)</h2>
+<p>Using “Templates” in your components</p>
+<h3>1. Interpolation <del>and Template Expressions</del>: <mark>{{ "{{ exp }}" }}</mark> </h3>
+<p>Student Name: {{ studentName }}</p>
+<div><img src="{{studentPhoto}}"></div>
+<p>Student Updated: {{studentUpdated.toLocaleDateString()}}</p>
+
+<h3>2. Property Bindind/Template Expressions: <mark> [prop]="template expression"</mark></h3>
+<div><img [src]="studentPhoto"></div>
+<p>Note: When setting an element property to a non-string data value, you must use property binding.</p>

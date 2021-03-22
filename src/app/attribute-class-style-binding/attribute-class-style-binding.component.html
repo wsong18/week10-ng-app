@@ -1,0 +1,21 @@
+<h2>The AttributeClassStyleBinding Component (Week 7)</h2>
+<p>Using “Templates” in your components</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th [attr.colspan]="headerSpan">Table Header (Attrbute Binding)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td  [class.table-warning]="showWarning">Column 1 (Class Binding)</td>
+            <td  [class.table-danger]="showWarning">Column 2 (Class Binding)</td>
+        </tr>
+        <tr>
+            <td [style.background-color]="grayBackground" >Column 3 (Style Binding)</td>
+            <td [style.background-color]="showBackground ? grayBackground : 'yellow'">Column 4  (Style Binding)</td>
+        </tr>
+    </tbody>
+</table>
+

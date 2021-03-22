@@ -1,0 +1,28 @@
+<div class="card card-body bg-light">
+    <h2>The Events (parent) component (Week 7)</h2>
+    <ul>
+        <li *ngFor="let msg of messages">{{msg}}</li>
+    </ul>
+
+    <app-child (btnClicked)="logClick($event)"></app-child>
+    <br>
+    Note: passing data (message) from child component to parent (Events) componnet
+</div>
+
+<br><br><br>
+<h2>Show posts in pages (Week 8)</h2>
+<p>Linking to routes with query parameters</p>
+<h3>
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 1 }">➀</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 2 }">➁</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 3 }">➂</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 4 }">➃</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 5 }">➄</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 6 }">➅</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 7 }">➆</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 8 }">➇</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 9 }">➈</a>&nbsp;
+    <a [routerLink]="['/posts']" [queryParams]="{ page: 10 }">➉</a>&nbsp;
+
+</h3>
+
